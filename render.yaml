@@ -5,7 +5,7 @@ databases:
 
 services:
   - type: web
-    name: rails
+    name: Travel-IT
     runtime: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec rails s"
