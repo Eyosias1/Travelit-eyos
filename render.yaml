@@ -1,6 +1,6 @@
 databases:
   - name: Travelit
-    databaseName: Travelit_production
+    databaseName: Travelit
     user: Travelit
 
 services:
