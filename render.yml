@@ -1,0 +1,18 @@
+databases:
+  - name: Travelit
+    databaseName: Travelit
+    user: Travelit
+
+services:
+  - type: web
+    name: Travelit
+    runtime: ruby
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: Travelit
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
