@@ -81,7 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: Travelit_production
-  username: Travelit
-  password: <%= ENV["TRAVELIT_DATABASE_PASSWORD"] %>
   url: <%= ENV['DATABASE_URL'] %>
